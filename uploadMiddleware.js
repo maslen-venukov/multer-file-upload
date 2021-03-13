@@ -3,7 +3,7 @@ import { v4 as uuidv4 } from 'uuid'
 
 const storage = multer.diskStorage({
   destination: (req, file, cb) => {
-    cb('null', 'uploads')
+    cb(null, 'uploads')
   },
   filename: (req, file, cb) => {
     const fileNameArr = file.originalname.split('.')
